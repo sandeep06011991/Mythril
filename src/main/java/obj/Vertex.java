@@ -10,11 +10,11 @@ public class Vertex {
         this.neightbours = neighbours;
     }
 
-    int getVertexId(){
+    public int getVertexId(){
         return vid;
     }
 
-    int[] getNeighbours(){
+    public int[] getNeighbours(){
         return this.neightbours;
     }
 }

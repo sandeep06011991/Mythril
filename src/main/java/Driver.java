@@ -1,17 +1,22 @@
 import apps.Task;
 
-public class Driver {
+import java.util.ArrayList;
 
-    Graph graph;
-    Task task;
+public class Driver<ATask extends Task> {
+
     ComputeQueue cq;
     RemoteQueue mq;
 
     Driver(Graph graph){
-        this.graph = graph;
+        cq = new ComputeQueue();
+        this.mq = new RemoteQueue(graph,cq);
+        cq.setQueue(mq);
     }
 
-    public int run(){
-        return 0;
+    public int run(ArrayList<ATask> seedTasks){
+//      FIXME: Iterate over Graph and start tasks
+        this.mq.start();
+        cq.addTaskToQueue(seedTasks);
+        return cq.run();
     }
 }

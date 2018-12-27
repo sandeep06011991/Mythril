@@ -16,4 +16,11 @@ public class DefaultGraph extends Graph{
         assert vid<size;
         return new Vertex(vid,adjList[vid]);
     }
+
+    @Override
+    int getSize() {
+        return size;
+    }
+
+
 }
