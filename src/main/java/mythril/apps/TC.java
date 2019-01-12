@@ -1,4 +1,4 @@
-package apps;
+package mythril.apps;
 
 import obj.Vertex;
 

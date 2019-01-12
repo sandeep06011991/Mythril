@@ -1,4 +1,5 @@
-import apps.Task;
+package mythril;
+import mythril.apps.Task;
 
 import java.util.concurrent.TimeUnit;
 

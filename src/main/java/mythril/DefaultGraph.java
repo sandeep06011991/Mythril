@@ -1,3 +1,4 @@
+package mythril;
 import obj.Vertex;
 
 public class DefaultGraph extends Graph{

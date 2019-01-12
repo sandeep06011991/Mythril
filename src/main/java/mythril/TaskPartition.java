@@ -1,4 +1,5 @@
-import apps.Task;
+package mythril;
+import mythril.apps.Task;
 import obj.Vertex;
 import java.util.ArrayList;
 import java.util.HashMap;
